@@ -26,26 +26,36 @@
         <h2 class="text-2xl font-bold font-poppins text-center text-white">Simple F(x) = y</h1>
             <div class="flex gap-10 mt-10">
 
-            <div>
-             <label for="quantity" class="text-white font-medium">x: &nbsp;</label> 
-            <input id="x" name="x" type="number" class="h-10 pl-3 pr-8 rounded-lg border-2 border-gray-200 focus:outline-none focus:border-blue-500 text-base text-gray-700" placeholder="X">  
-            </div>
-            <div>
+                <div>
+                    <label for="quantity" class="text-white font-medium">x: &nbsp;</label>
+                    <input id="x" name="x" type="number"
+                        class="h-10 pl-3 pr-8 rounded-lg border-2 border-gray-200 focus:outline-none focus:border-blue-500 text-base text-gray-700"
+                        placeholder="X">
+                </div>
+                <div>
 
-           <label for="quantity" class="text-white font-medium">y: &nbsp;</label> 
-            <input id="y" name="y" type="number" class="h-10 pl-3 pr-8 rounded-lg border-2 border-gray-200 focus:outline-none focus:border-blue-500 text-base text-gray-700" placeholder="X"> 
+                    <label for="quantity" class="text-white font-medium">y: &nbsp;</label>
+                    <input id="y" name="y" type="number"
+                        class="h-10 pl-3 pr-8 rounded-lg border-2 border-gray-200 focus:outline-none focus:border-blue-500 text-base text-gray-700"
+                        placeholder="X">
+                </div>
+                <button id="push"
+                    class="flex items-center px-4 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    Push
+                </button>
             </div>
-            <button id="push" class="flex items-center px-4 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                Push
+            <div class="mt-10 border-2 border-gray-400">
+                <canvas id="myChart" height="40%"></canvas>
+            </div>
+            <button id="generate"
+                class="mt-10 flex items-center px-4 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                generate
             </button>
-            </div>
-                    <div class="mt-20 border-2 border-gray-400">
-                        <canvas id="myChart"></canvas>
-                    </div>
+    </div>
 
-            </div>
 
-            <script src="main.js" type="module"></script>
+
+    <script src="main.js" type="module"></script>
 </body>
 
 </html>
