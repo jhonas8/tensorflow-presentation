@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                container: {
+                    center: true,
+                }
+            }
+        }
+    </script>
+    <title>First Example</title>
+</head>
+<body>
+    <div class="container h-screen bg-gray-900 p-10">
+        <h1 class="text-4xl font-bold font-poppins text-center text-white">Data Prediction</h1>
+        <h2 class="text-2xl font-bold font-poppins text-center text-white">Simple F(x) = y</h1>
+        <canvas id="myChart" height="98%" class="mt-20"></canvas>
+    </div> 
+
+    <script src="main.js" type="module"></script>
+</body>
+</html>
