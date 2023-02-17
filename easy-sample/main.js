@@ -85,13 +85,13 @@ const getOnClickPushHandler = () => {
 };
 
 /* ---------- Application ---------- */
-
 document.getElementById("push").onclick = getOnClickPushHandler();
 
 document.getElementById("generate").onclick = () => {
   const xs = [],
     ys = [];
 
+  // y = x^2 + 2x + 1
   let x = 0;
   let y = x * x + 2 * x + 1;
   setInterval(() => {
@@ -100,8 +100,6 @@ document.getElementById("generate").onclick = () => {
     ys.push((y = x * x + 2 * x + 1));
 
     generateBestFitLine({ xs, ys }).then((bestfit) => {
-      console.log(bestfit);
-
       // updates the value of x and y in the input fields
       document.getElementById("x").value = parseInt(x);
       document.getElementById("y").value = parseInt(y);
